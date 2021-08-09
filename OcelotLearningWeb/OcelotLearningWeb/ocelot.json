@@ -1,2 +1,18 @@
 ﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{routing}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "www.bronya.xyz",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/1/{routing}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5000"
+  }
 }
